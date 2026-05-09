@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-current.dtd">
+<suite name="Automation Test Suite" verbose="2" parallel="tests" thread-count="1">
+    <test name="UI Tests" preserve-order="true">
+        <classes>
+            <!-- Add your test classes here -->
+            <!-- Example:
+            <class name="com.hemanth.automation.tests.LoginTest"/>
+            <class name="com.hemanth.automation.tests.DashboardTest"/>
+            -->
+        </classes>
+    </test>
+</suite>

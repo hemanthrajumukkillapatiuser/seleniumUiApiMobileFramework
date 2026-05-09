@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-current.dtd">
-<suite name="Automation Test Suite" verbose="2" parallel="tests" thread-count="1">
-    <test name="UI Tests" preserve-order="true">
+
+<suite name="Selenium UI API Mobile Framework Suite">
+
+    <test name="UI Smoke Tests">
         <classes>
-            <!-- Add your test classes here -->
-            <!-- Example:
-            <class name="com.hemanth.automation.tests.LoginTest"/>
-            <class name="com.hemanth.automation.tests.DashboardTest"/>
-            -->
+            <class name="com.hemanth.automation.tests.ui.HomePageTest"/>
         </classes>
     </test>
+
 </suite>
