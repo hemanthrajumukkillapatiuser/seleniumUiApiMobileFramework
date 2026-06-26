@@ -13,6 +13,10 @@ public class BaseTest {
         String browser = ConfigReader.getProperty("browser", "chrome");
         String baseUrl = ConfigReader.getProperty("baseUrl");
 
+        if (baseUrl == null || baseUrl.isBlank()) {
+            throw new IllegalStateException("Missing required config property: baseUrl");
+        }
+
         DriverFactory.initDriver(browser);
         DriverFactory.getDriver().get(baseUrl);
     }

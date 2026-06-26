@@ -14,7 +14,7 @@ public final class ConfigReader {
                 .getResourceAsStream("config.properties")) {
 
             if (inputStream == null) {
-                throw new RuntimeException("config.properties file not found in src/test/resources");
+                throw new RuntimeException("config.properties file not found on classpath");
             }
 
             properties.load(inputStream);
